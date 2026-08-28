@@ -1,0 +1,5629 @@
+{
+  "schema_version": "freudenthal-edge-star-v2",
+  "provenance": {
+    "generated_by": "edge_star_certificate.py",
+    "generator_sha256": "ffef3419fddcd84af1b0cb88a2904657c076786c2824afd0f02145af3a572418",
+    "mode": "representatives",
+    "deterministic_payload": true,
+    "minimum_python": "3.10"
+  },
+  "mathematical_input": {
+    "grids": [
+      [
+        3,
+        3,
+        3
+      ],
+      [
+        4,
+        4,
+        4
+      ],
+      [
+        5,
+        5,
+        5
+      ]
+    ],
+    "degrees": [
+      4,
+      5
+    ],
+    "source_object": "X_e on the tetrahedral edge star; only true box-boundary velocity nodes removed",
+    "supported_object": "Y_e on the one-face-neighbour patch; all exterior velocity nodes removed",
+    "certified_statement": "tau_e(ker sigma_e intersect Y_e) equals tau_e(ker gamma_e intersect X_e)"
+  },
+  "arithmetic": {
+    "field": "fractions.Fraction over Q",
+    "upper_and_exact_rank": "exact sparse Gaussian elimination",
+    "lower_rank_witness": "selected full-rank minor modulo a prime",
+    "modulus": 1000003,
+    "modulus_verified_prime_by_trial_division": true,
+    "all_rational_denominators_checked_invertible_modulo_prime": true
+  },
+  "classification_definitions": {
+    "incidence_type": "one of seven coarse classes determined by edge increment, boundary incidence, and incident-tetrahedron count",
+    "source_configuration": "edge, star tetrahedra, and physical planes meeting the star, modulo integer translation and coordinate permutation",
+    "coverage_configuration": "source geometry plus the supported one-ring and every physical plane meeting it, modulo integer translation and coordinate permutation; reflections are not quotiented",
+    "degree_record": "one concrete (grid, geometric edge placement, polynomial degree) exact matrix computation"
+  },
+  "classification": {
+    "incidence_type_count": 7,
+    "source_configuration_count_by_grid": {
+      "3": 64,
+      "4": 85,
+      "5": 85
+    },
+    "source_configuration_union_count": 85,
+    "coverage_configuration_count_by_grid": {
+      "3": 64,
+      "4": 129,
+      "5": 165
+    },
+    "coverage_configuration_union_count": 180,
+    "edge_placement_count_by_grid": {
+      "3": 279,
+      "4": 604,
+      "5": 1115
+    },
+    "degree_record_count_by_grid": {
+      "3": 14,
+      "4": 14,
+      "5": 14
+    },
+    "degree_record_count_by_degree": {
+      "4": 21,
+      "5": 21
+    },
+    "degree_record_count_by_kind": {
+      "boundary_face_axis": 6,
+      "boundary_face_diagonal": 6,
+      "cube_diagonal": 6,
+      "interior_axis": 6,
+      "interior_face_diagonal": 6,
+      "one_tet_box_edge": 6,
+      "two_tet_box_edge": 6
+    },
+    "edge_placement_count_by_grid_and_kind": {
+      "3": {
+        "boundary_face_axis": 72,
+        "boundary_face_diagonal": 54,
+        "cube_diagonal": 27,
+        "interior_axis": 36,
+        "interior_face_diagonal": 54,
+        "one_tet_box_edge": 18,
+        "two_tet_box_edge": 18
+      },
+      "4": {
+        "boundary_face_axis": 144,
+        "boundary_face_diagonal": 96,
+        "cube_diagonal": 64,
+        "interior_axis": 108,
+        "interior_face_diagonal": 144,
+        "one_tet_box_edge": 24,
+        "two_tet_box_edge": 24
+      },
+      "5": {
+        "boundary_face_axis": 240,
+        "boundary_face_diagonal": 150,
+        "cube_diagonal": 125,
+        "interior_axis": 240,
+        "interior_face_diagonal": 300,
+        "one_tet_box_edge": 30,
+        "two_tet_box_edge": 30
+      }
+    },
+    "configurations": [
+      {
+        "coverage_configuration_id": "cfg-002136f1ed52c8a2",
+        "source_configuration_ids": [
+          "src-923d91c488e97e08"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            2,
+            4,
+            4
+          ],
+          [
+            3,
+            4,
+            5
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-008a63a00311e35a",
+        "source_configuration_ids": [
+          "src-f22ad2b6baae470a"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 6,
+          "4": 0,
+          "5": 0
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-00e1b376b4e03044",
+        "source_configuration_ids": [
+          "src-4d0807ea06d436cb"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            2,
+            2,
+            2
+          ],
+          [
+            2,
+            3,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 3,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-011ae90796156697",
+        "source_configuration_ids": [
+          "src-f66c8eabb7531b7e"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            1,
+            2,
+            4
+          ],
+          [
+            2,
+            3,
+            5
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-01c01f02d4ffabc6",
+        "source_configuration_ids": [
+          "src-a7bcccc14d3d41aa"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            2,
+            2,
+            3
+          ],
+          [
+            2,
+            3,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-043387cfb4644795",
+        "source_configuration_ids": [
+          "src-c23d3c134dc5791f"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            2,
+            3,
+            3
+          ],
+          [
+            3,
+            4,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-04733d2ab2d46d88",
+        "source_configuration_ids": [
+          "src-88df25c82a5ed683"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            1,
+            3,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-07ae443ad1ccba29",
+        "source_configuration_ids": [
+          "src-ec142b8d592abe01"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            2,
+            2,
+            2
+          ],
+          [
+            3,
+            3,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 1,
+          "4": 1,
+          "5": 1
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-09ecbc1b4f62af48",
+        "source_configuration_ids": [
+          "src-2ffb91975ef18e8e"
+        ],
+        "kind": "boundary_face_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 6,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-09f62416139be22b",
+        "source_configuration_ids": [
+          "src-11d90e6d2758ee09"
+        ],
+        "kind": "interior_axis",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            1,
+            1,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 3,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-0a9a8255a6032846",
+        "source_configuration_ids": [
+          "src-9fc77f5aabad6f6a"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            2,
+            3,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-0a9bdafacf79fe92",
+        "source_configuration_ids": [
+          "src-9fc77f5aabad6f6a"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            3,
+            4,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-0bd8dca767b3ca94",
+        "source_configuration_ids": [
+          "src-f22ad2b6baae470a"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-0c6042c9ceb42874",
+        "source_configuration_ids": [
+          "src-d70511466cb27dcd"
+        ],
+        "kind": "boundary_face_axis",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            1,
+            3,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 6,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-0c8a8071cbca5903",
+        "source_configuration_ids": [
+          "src-bbe35f29d618b22e"
+        ],
+        "kind": "interior_axis",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            2,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-0cd59750a90b71e2",
+        "source_configuration_ids": [
+          "src-2c852fe80d9af5cd"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            1,
+            3,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-0f815526b90ee29c",
+        "source_configuration_ids": [
+          "src-f22ad2b6baae470a"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            1,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-1179245d97fa5938",
+        "source_configuration_ids": [
+          "src-328f603a55f02268"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            1,
+            1,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 3,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-1208f40bcfb6adcc",
+        "source_configuration_ids": [
+          "src-aeac6825f153b6a7"
+        ],
+        "kind": "boundary_face_axis",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-130f6fd4a641ebee",
+        "source_configuration_ids": [
+          "src-63d5a90a5810e388"
+        ],
+        "kind": "boundary_face_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-14929b14e4563ef8",
+        "source_configuration_ids": [
+          "src-ef6ead5be48ec155"
+        ],
+        "kind": "interior_axis",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            2,
+            2,
+            3
+          ],
+          [
+            2,
+            3,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-180e5d944b40cf77",
+        "source_configuration_ids": [
+          "src-58f8d19f6f893d89"
+        ],
+        "kind": "interior_axis",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            2,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 3,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-18c3975385889b30",
+        "source_configuration_ids": [
+          "src-e2d338d5f21e5b4f"
+        ],
+        "kind": "boundary_face_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            3,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 3,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-18ca183c3ecc3ec7",
+        "source_configuration_ids": [
+          "src-68a95a31427552bc"
+        ],
+        "kind": "one_tet_box_edge",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            0,
+            3
+          ],
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 6,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-1924dc9df28bbdb4",
+        "source_configuration_ids": [
+          "src-cf7bd1fccc7fc92e"
+        ],
+        "kind": "boundary_face_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            3,
+            4,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-193e38a70c1063c2",
+        "source_configuration_ids": [
+          "src-4d0807ea06d436cb"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-1a4d6e83bac8442a",
+        "source_configuration_ids": [
+          "src-5671a153b3c974ab"
+        ],
+        "kind": "interior_axis",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 3,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-1b9c4c716cd8c327",
+        "source_configuration_ids": [
+          "src-94fb9106b84a9171"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-1bc18d01f74ae07c",
+        "source_configuration_ids": [
+          "src-4d0807ea06d436cb"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 3,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-1e1a95559384e5a6",
+        "source_configuration_ids": [
+          "src-4d9526d29ffb871f"
+        ],
+        "kind": "interior_axis",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            1,
+            3,
+            3
+          ],
+          [
+            2,
+            3,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-1fa9f527516f02a9",
+        "source_configuration_ids": [
+          "src-2ffb91975ef18e8e"
+        ],
+        "kind": "boundary_face_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            0,
+            2,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-212bbb8448b97e1f",
+        "source_configuration_ids": [
+          "src-ae59725e77a57209"
+        ],
+        "kind": "interior_axis",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            2,
+            3,
+            3
+          ],
+          [
+            2,
+            3,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-26b20dcf6c42abf5",
+        "source_configuration_ids": [
+          "src-9fc77f5aabad6f6a"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            1,
+            1,
+            3
+          ],
+          [
+            2,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-271befb45d5f0741",
+        "source_configuration_ids": [
+          "src-f66c8eabb7531b7e"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            1,
+            1,
+            3
+          ],
+          [
+            2,
+            2,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-27f3ae78c273699c",
+        "source_configuration_ids": [
+          "src-e017c7acfc50a29f"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 3,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-289a7e63ea75f4ff",
+        "source_configuration_ids": [
+          "src-0e19db9fe0cf3d65"
+        ],
+        "kind": "two_tet_box_edge",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 3,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-2d868a25a11023e2",
+        "source_configuration_ids": [
+          "src-c1d65cd51e1720a5"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            2,
+            3,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-2f3324aa08faf2b0",
+        "source_configuration_ids": [
+          "src-94fb9106b84a9171"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 3,
+          "4": 0,
+          "5": 0
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-2f7b348d8934ed98",
+        "source_configuration_ids": [
+          "src-73a9a2b021850218"
+        ],
+        "kind": "interior_axis",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-310b77c119aa8f34",
+        "source_configuration_ids": [
+          "src-94fb9106b84a9171"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            1,
+            3,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-34bc2bc405780e71",
+        "source_configuration_ids": [
+          "src-99f81056640fa52e"
+        ],
+        "kind": "boundary_face_axis",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            2,
+            4,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-3538f0ebe1832977",
+        "source_configuration_ids": [
+          "src-f66c8eabb7531b7e"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            2,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 3,
+          "4": 0,
+          "5": 0
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-37924e2a683cf568",
+        "source_configuration_ids": [
+          "src-c1d65cd51e1720a5"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            2,
+            2,
+            2
+          ],
+          [
+            3,
+            3,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 1,
+          "5": 1
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-383edf0113fd6259",
+        "source_configuration_ids": [
+          "src-94475c8ff48f68f4"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            1,
+            1,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 3,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-3aa4da098bcb6e21",
+        "source_configuration_ids": [
+          "src-a7bcccc14d3d41aa"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            2,
+            2,
+            4
+          ],
+          [
+            2,
+            3,
+            5
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-3c6e7661aab63616",
+        "source_configuration_ids": [
+          "src-31061f2bc39f9cff"
+        ],
+        "kind": "boundary_face_axis",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 6,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-3c97f59da840022b",
+        "source_configuration_ids": [
+          "src-6d22c013390fc65b"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            0,
+            2,
+            4
+          ],
+          [
+            1,
+            3,
+            5
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-3e819f6d5a327b7b",
+        "source_configuration_ids": [
+          "src-34ca9507fabb0225"
+        ],
+        "kind": "boundary_face_axis",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            1,
+            1,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 6,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-4172af4d3f7df0d1",
+        "source_configuration_ids": [
+          "src-ab3910d16530a2d8"
+        ],
+        "kind": "boundary_face_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 6,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-41bbcd910f044a37",
+        "source_configuration_ids": [
+          "src-c1d65cd51e1720a5"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            2,
+            2,
+            2
+          ],
+          [
+            3,
+            3,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 1
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-4440fbe9d7102435",
+        "source_configuration_ids": [
+          "src-9fc77f5aabad6f6a"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            2,
+            2,
+            4
+          ],
+          [
+            3,
+            3,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-44bace4f96f9bf76",
+        "source_configuration_ids": [
+          "src-a421446431846b29"
+        ],
+        "kind": "interior_axis",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            2,
+            2,
+            3
+          ],
+          [
+            2,
+            2,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 3,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-47007dd96c7a0d31",
+        "source_configuration_ids": [
+          "src-fa3fd66bedb1584f"
+        ],
+        "kind": "boundary_face_axis",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            3,
+            3,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-475ed51f1058f41f",
+        "source_configuration_ids": [
+          "src-8714d2960d0c1649"
+        ],
+        "kind": "boundary_face_axis",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 6,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-478f5afa1780357f",
+        "source_configuration_ids": [
+          "src-7a6fc439bcde15b4"
+        ],
+        "kind": "boundary_face_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-480017b623ecfeb3",
+        "source_configuration_ids": [
+          "src-88df25c82a5ed683"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-4838d4118517d304",
+        "source_configuration_ids": [
+          "src-7c830018676d6f8e"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-4b2c5c99505f80c7",
+        "source_configuration_ids": [
+          "src-94fb9106b84a9171"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-4bf0c72f771d50a3",
+        "source_configuration_ids": [
+          "src-dc9c9ce685b8568e"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 1,
+          "4": 1,
+          "5": 1
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-4d4cec4abf4f291a",
+        "source_configuration_ids": [
+          "src-a7bcccc14d3d41aa"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            2,
+            2,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-5065819f38b01c84",
+        "source_configuration_ids": [
+          "src-c1d65cd51e1720a5"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            2,
+            3,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-5152a7d1a297a36f",
+        "source_configuration_ids": [
+          "src-154391bbe991b9f8"
+        ],
+        "kind": "boundary_face_axis",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 6,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-5351033f2448833d",
+        "source_configuration_ids": [
+          "src-5b040a94af8e2076"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-549859eb14875220",
+        "source_configuration_ids": [
+          "src-cf7bd1fccc7fc92e"
+        ],
+        "kind": "boundary_face_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            2,
+            3,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 6,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-552494d040d78994",
+        "source_configuration_ids": [
+          "src-88df25c82a5ed683"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            0,
+            2,
+            4
+          ],
+          [
+            1,
+            3,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-5600fb12a88a7ada",
+        "source_configuration_ids": [
+          "src-7c830018676d6f8e"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 3,
+          "4": 0,
+          "5": 0
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-5d4f0ffb9b7a7a99",
+        "source_configuration_ids": [
+          "src-0bdf158006b9b195"
+        ],
+        "kind": "interior_axis",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            1,
+            2,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 3,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-5d8b16c21b889e47",
+        "source_configuration_ids": [
+          "src-5b040a94af8e2076"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-5e8ffc3d465edaa7",
+        "source_configuration_ids": [
+          "src-fa3fd66bedb1584f"
+        ],
+        "kind": "boundary_face_axis",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            2,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 6,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-5f098fbf8310efe9",
+        "source_configuration_ids": [
+          "src-eeea7a4fca6efe6f"
+        ],
+        "kind": "boundary_face_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 3,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-60c0e112c05d36b4",
+        "source_configuration_ids": [
+          "src-861a96d6dbfdabd5"
+        ],
+        "kind": "boundary_face_axis",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-60dcb642e28524a7",
+        "source_configuration_ids": [
+          "src-923d91c488e97e08"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            1,
+            3,
+            3
+          ],
+          [
+            2,
+            3,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-6337b1c92dc27922",
+        "source_configuration_ids": [
+          "src-2124a5d069fd623b"
+        ],
+        "kind": "two_tet_box_edge",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            2,
+            3,
+            3
+          ],
+          [
+            3,
+            3,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 3,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-64770a205b0111d7",
+        "source_configuration_ids": [
+          "src-7c830018676d6f8e"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            1,
+            1,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-64e674c892162155",
+        "source_configuration_ids": [
+          "src-2c852fe80d9af5cd"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 3,
+          "4": 0,
+          "5": 0
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-6549afbb8ce566dc",
+        "source_configuration_ids": [
+          "src-2c852fe80d9af5cd"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            1,
+            3,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-69267d1548e9278b",
+        "source_configuration_ids": [
+          "src-c1d65cd51e1720a5"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            2,
+            3,
+            3
+          ],
+          [
+            3,
+            4,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-6a40ef0f355f027e",
+        "source_configuration_ids": [
+          "src-f98dbdc04e2e5784"
+        ],
+        "kind": "interior_axis",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            1,
+            2,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 3,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-6ac2ecb84e3fa5a7",
+        "source_configuration_ids": [
+          "src-4d9526d29ffb871f"
+        ],
+        "kind": "interior_axis",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 3,
+          "4": 0,
+          "5": 0
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-6bb639e26fa89de4",
+        "source_configuration_ids": [
+          "src-c1d65cd51e1720a5"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 1,
+          "5": 1
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-6c7ba205ed190a86",
+        "source_configuration_ids": [
+          "src-fbed56f9ce5e945e"
+        ],
+        "kind": "boundary_face_axis",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            0,
+            2,
+            4
+          ],
+          [
+            1,
+            2,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-6d2a99693efa7601",
+        "source_configuration_ids": [
+          "src-389cd3933cd62266"
+        ],
+        "kind": "boundary_face_axis",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            2,
+            2,
+            4
+          ],
+          [
+            2,
+            3,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 24
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-6db63ecd8813cca9",
+        "source_configuration_ids": [
+          "src-f6bab4bdf2eed6f5"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            1,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 6,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-6dbbddf59cddffe3",
+        "source_configuration_ids": [
+          "src-13553e438b3efbe5"
+        ],
+        "kind": "interior_axis",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            1,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 6,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-70f35cab8be8d5fa",
+        "source_configuration_ids": [
+          "src-6d22c013390fc65b"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            1,
+            3,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-71c88ec94b9df496",
+        "source_configuration_ids": [
+          "src-9fc77f5aabad6f6a"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            1,
+            2,
+            4
+          ],
+          [
+            2,
+            3,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-71de2bdb79f45097",
+        "source_configuration_ids": [
+          "src-bd1126d7e8ac2287"
+        ],
+        "kind": "boundary_face_axis",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            0,
+            2,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-71eae6cd8c8db892",
+        "source_configuration_ids": [
+          "src-3877bdb0e936b1ec"
+        ],
+        "kind": "interior_axis",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            1,
+            3,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-728d7af717284f0b",
+        "source_configuration_ids": [
+          "src-2c852fe80d9af5cd"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-734d4e49db1bdcbe",
+        "source_configuration_ids": [
+          "src-c2ef62dcc275d482"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 6,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-7378c41bbb7d2497",
+        "source_configuration_ids": [
+          "src-d9b9074e9bd51a1e"
+        ],
+        "kind": "one_tet_box_edge",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            0,
+            3,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 6,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-7426f5fbe95bac26",
+        "source_configuration_ids": [
+          "src-f0838073c0ec299c"
+        ],
+        "kind": "interior_axis",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-744984e832bbacdd",
+        "source_configuration_ids": [
+          "src-34f6743d4d5e3f1f"
+        ],
+        "kind": "boundary_face_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            0,
+            3
+          ],
+          [
+            1,
+            1,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 3,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-7574f45c06357d66",
+        "source_configuration_ids": [
+          "src-9d76a4584222fc6b"
+        ],
+        "kind": "boundary_face_axis",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 6,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-774816684cb4724c",
+        "source_configuration_ids": [
+          "src-f0838073c0ec299c"
+        ],
+        "kind": "interior_axis",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-783d5b0bfcbb33c5",
+        "source_configuration_ids": [
+          "src-c3fa055e98f3373a"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            1,
+            2,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-784917a05e06f79e",
+        "source_configuration_ids": [
+          "src-2b2384233a491635"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            1,
+            3,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 3,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-786e42dfc4ac3021",
+        "source_configuration_ids": [
+          "src-73a9a2b021850218"
+        ],
+        "kind": "interior_axis",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 3,
+          "4": 0,
+          "5": 0
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-799b013d47351fb7",
+        "source_configuration_ids": [
+          "src-ad60d957d0907bd7"
+        ],
+        "kind": "interior_axis",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            1,
+            2,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-7b10be9bc6f347d4",
+        "source_configuration_ids": [
+          "src-9dbdaa56e13d52c0"
+        ],
+        "kind": "interior_axis",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 6,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-7c2d7bad92983927",
+        "source_configuration_ids": [
+          "src-7a6fc439bcde15b4"
+        ],
+        "kind": "boundary_face_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            2,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 3,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-7c8caddd2134552c",
+        "source_configuration_ids": [
+          "src-6d22c013390fc65b"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            1,
+            2,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-8284ca6b60581b65",
+        "source_configuration_ids": [
+          "src-94fb9106b84a9171"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            1,
+            3,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-844ea44f47aa327a",
+        "source_configuration_ids": [
+          "src-f66c8eabb7531b7e"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            2,
+            2,
+            4
+          ],
+          [
+            3,
+            3,
+            5
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-88ba2bb333ccae71",
+        "source_configuration_ids": [
+          "src-c1d65cd51e1720a5"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 1,
+          "4": 0,
+          "5": 0
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-893cf670e9c2bfea",
+        "source_configuration_ids": [
+          "src-9fc77f5aabad6f6a"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 3,
+          "4": 0,
+          "5": 0
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-89cca836564aab6f",
+        "source_configuration_ids": [
+          "src-d597d6cbbc52ef71"
+        ],
+        "kind": "interior_axis",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            1,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-89d5ce84b3321d82",
+        "source_configuration_ids": [
+          "src-c1d65cd51e1720a5"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            2,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-8ab8ff22ffe8d6b2",
+        "source_configuration_ids": [
+          "src-63d5a90a5810e388"
+        ],
+        "kind": "boundary_face_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 6,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-8afbd5796ddfb9d8",
+        "source_configuration_ids": [
+          "src-508e27f79247ad9d"
+        ],
+        "kind": "boundary_face_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            1,
+            2,
+            4
+          ],
+          [
+            2,
+            3,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-8c1ac58599f490d5",
+        "source_configuration_ids": [
+          "src-8ac523c51dca81c0"
+        ],
+        "kind": "boundary_face_axis",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-90e9ef3544fcd86f",
+        "source_configuration_ids": [
+          "src-7fc4adb5136c78ed"
+        ],
+        "kind": "boundary_face_axis",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 6,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-918ee7829e9c0dc5",
+        "source_configuration_ids": [
+          "src-e01e519e4f8c1a54"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            2,
+            2,
+            2
+          ],
+          [
+            2,
+            3,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 3,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-92aac6e066121e3a",
+        "source_configuration_ids": [
+          "src-ef6ead5be48ec155"
+        ],
+        "kind": "interior_axis",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            2,
+            2,
+            4
+          ],
+          [
+            2,
+            3,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-92df58e35de7f1b8",
+        "source_configuration_ids": [
+          "src-c1d65cd51e1720a5"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            2,
+            2,
+            3
+          ],
+          [
+            3,
+            3,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-93761627636c8ee7",
+        "source_configuration_ids": [
+          "src-4d0807ea06d436cb"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            2,
+            2,
+            3
+          ],
+          [
+            2,
+            3,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-975418ad5f0ebb53",
+        "source_configuration_ids": [
+          "src-17edaecbaf1078ec"
+        ],
+        "kind": "boundary_face_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            2,
+            2,
+            3
+          ],
+          [
+            3,
+            3,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 3,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-981941015d62c74b",
+        "source_configuration_ids": [
+          "src-94fb9106b84a9171"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            1,
+            3,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-99acfa083607dbcc",
+        "source_configuration_ids": [
+          "src-923d91c488e97e08"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            2,
+            3,
+            3
+          ],
+          [
+            3,
+            3,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-9a2d5d240940eb48",
+        "source_configuration_ids": [
+          "src-a723baff0b83804c"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            1,
+            3,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-9a5cb3a93c4c5802",
+        "source_configuration_ids": [
+          "src-bbe35f29d618b22e"
+        ],
+        "kind": "interior_axis",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            2,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 3,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-9ac1aba05bda4d25",
+        "source_configuration_ids": [
+          "src-2c852fe80d9af5cd"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-9c99e7b9af2f7072",
+        "source_configuration_ids": [
+          "src-3877bdb0e936b1ec"
+        ],
+        "kind": "interior_axis",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            1,
+            1,
+            3
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-a25072864a98ec53",
+        "source_configuration_ids": [
+          "src-a723baff0b83804c"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 6,
+          "4": 0,
+          "5": 0
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-a672df5999a30132",
+        "source_configuration_ids": [
+          "src-aeac6825f153b6a7"
+        ],
+        "kind": "boundary_face_axis",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 6,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-a700eddc1622d1bc",
+        "source_configuration_ids": [
+          "src-3877bdb0e936b1ec"
+        ],
+        "kind": "interior_axis",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            1,
+            2,
+            4
+          ],
+          [
+            1,
+            3,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-a8522bca8fdbfe83",
+        "source_configuration_ids": [
+          "src-07647043bf048632"
+        ],
+        "kind": "boundary_face_axis",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            1,
+            1,
+            3
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 6,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-a911f89853105e81",
+        "source_configuration_ids": [
+          "src-73a9a2b021850218"
+        ],
+        "kind": "interior_axis",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            1,
+            1,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-a9624c18b8ed678c",
+        "source_configuration_ids": [
+          "src-f0838073c0ec299c"
+        ],
+        "kind": "interior_axis",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-ac38d21b304672f6",
+        "source_configuration_ids": [
+          "src-a723baff0b83804c"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            1,
+            1,
+            3
+          ],
+          [
+            1,
+            2,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-acea316372fa16af",
+        "source_configuration_ids": [
+          "src-4d9526d29ffb871f"
+        ],
+        "kind": "interior_axis",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            2,
+            4,
+            4
+          ],
+          [
+            3,
+            4,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-ae4a780fc7d13811",
+        "source_configuration_ids": [
+          "src-2c852fe80d9af5cd"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-ae8c6dd22a09aed9",
+        "source_configuration_ids": [
+          "src-2c852fe80d9af5cd"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            1,
+            3,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-aeb7ef4b3f50df46",
+        "source_configuration_ids": [
+          "src-aefc9f4f1ee9f424"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            1,
+            1,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 3,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-b0033f1fa4bcd0ae",
+        "source_configuration_ids": [
+          "src-c1d65cd51e1720a5"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            2,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-b0147cac2a98787e",
+        "source_configuration_ids": [
+          "src-508e27f79247ad9d"
+        ],
+        "kind": "boundary_face_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            1,
+            1,
+            3
+          ],
+          [
+            2,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 3,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-b058bfb415693f54",
+        "source_configuration_ids": [
+          "src-7c9ad974f7794eb8"
+        ],
+        "kind": "two_tet_box_edge",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 3,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-b0e78cedb431f894",
+        "source_configuration_ids": [
+          "src-7c9ad974f7794eb8"
+        ],
+        "kind": "two_tet_box_edge",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 3,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-b3c80109497a6e94",
+        "source_configuration_ids": [
+          "src-3877bdb0e936b1ec"
+        ],
+        "kind": "interior_axis",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 6,
+          "4": 0,
+          "5": 0
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-b45e1f1096cdefe1",
+        "source_configuration_ids": [
+          "src-a79cb3f33af55acb"
+        ],
+        "kind": "boundary_face_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            1,
+            3,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 6,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-b4f3c60916503b93",
+        "source_configuration_ids": [
+          "src-ef6ead5be48ec155"
+        ],
+        "kind": "interior_axis",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            2,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-b796a05d15e2aba8",
+        "source_configuration_ids": [
+          "src-94fb9106b84a9171"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-b81cbd341b06e7f6",
+        "source_configuration_ids": [
+          "src-a723baff0b83804c"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            1,
+            2,
+            4
+          ],
+          [
+            1,
+            3,
+            5
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-c406d6322c596774",
+        "source_configuration_ids": [
+          "src-8714d2960d0c1649"
+        ],
+        "kind": "boundary_face_axis",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            0,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-c47cba487f3d1766",
+        "source_configuration_ids": [
+          "src-7a6fc439bcde15b4"
+        ],
+        "kind": "boundary_face_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            2,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 3,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-c6ca5617fbf94c69",
+        "source_configuration_ids": [
+          "src-f66c8eabb7531b7e"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            2,
+            2,
+            3
+          ],
+          [
+            3,
+            3,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-c8328b81b83db3d3",
+        "source_configuration_ids": [
+          "src-7c830018676d6f8e"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            1,
+            1,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-c8c4359b8e98b1b6",
+        "source_configuration_ids": [
+          "src-508e27f79247ad9d"
+        ],
+        "kind": "boundary_face_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            2,
+            2,
+            4
+          ],
+          [
+            3,
+            3,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 3,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-c930a116db30ee66",
+        "source_configuration_ids": [
+          "src-9fc77f5aabad6f6a"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            2,
+            2,
+            3
+          ],
+          [
+            3,
+            3,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-ca0b59d919d5ff6a",
+        "source_configuration_ids": [
+          "src-c1d65cd51e1720a5"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            2,
+            3,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-cc74fc1ca0023f5a",
+        "source_configuration_ids": [
+          "src-bbe35f29d618b22e"
+        ],
+        "kind": "interior_axis",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 3,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-cd70ffa17c8a7e9c",
+        "source_configuration_ids": [
+          "src-c23d3c134dc5791f"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            1,
+            3,
+            3
+          ],
+          [
+            2,
+            4,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-cdec890dfd8a75f4",
+        "source_configuration_ids": [
+          "src-8ac523c51dca81c0"
+        ],
+        "kind": "boundary_face_axis",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 24
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-ce8f990c816bedfb",
+        "source_configuration_ids": [
+          "src-73a9a2b021850218"
+        ],
+        "kind": "interior_axis",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            1,
+            1,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-cfde5caec866acaf",
+        "source_configuration_ids": [
+          "src-5b040a94af8e2076"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-d40cd6d6c84f6d6f",
+        "source_configuration_ids": [
+          "src-f22ad2b6baae470a"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            1,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-d430e36cdcf56d20",
+        "source_configuration_ids": [
+          "src-36d68ddc28e7c615"
+        ],
+        "kind": "two_tet_box_edge",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            2,
+            4,
+            4
+          ],
+          [
+            3,
+            4,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 3,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-d9735024e1b81afd",
+        "source_configuration_ids": [
+          "src-f66c8eabb7531b7e"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            3,
+            4,
+            5
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-db5f3c8c5d4924ae",
+        "source_configuration_ids": [
+          "src-a28475248c5342af"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            1,
+            3,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 3,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-dc6059575c6d91ab",
+        "source_configuration_ids": [
+          "src-fae81b9e5b72ee5a"
+        ],
+        "kind": "boundary_face_axis",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            2,
+            2,
+            3
+          ],
+          [
+            2,
+            3,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 6,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-dec2a4a1b9dba567",
+        "source_configuration_ids": [
+          "src-923d91c488e97e08"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 6,
+          "4": 0,
+          "5": 0
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-df35686e8660c52c",
+        "source_configuration_ids": [
+          "src-c23d3c134dc5791f"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            2,
+            3,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 3,
+          "4": 0,
+          "5": 0
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-e02b60682bff4450",
+        "source_configuration_ids": [
+          "src-6d22c013390fc65b"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 6,
+          "4": 0,
+          "5": 0
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-e568d0f52e716fa5",
+        "source_configuration_ids": [
+          "src-a4fcd60d279a7844"
+        ],
+        "kind": "two_tet_box_edge",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 3,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-e889652187c6c3cc",
+        "source_configuration_ids": [
+          "src-88df25c82a5ed683"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            2
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 6,
+          "4": 0,
+          "5": 0
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-e8b375177c1b579c",
+        "source_configuration_ids": [
+          "src-300cec8e7107d8c6"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            2,
+            3,
+            3
+          ],
+          [
+            2,
+            4,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 3,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-eb0bfe75947d48f9",
+        "source_configuration_ids": [
+          "src-4d0807ea06d436cb"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-ed403432f0b02f69",
+        "source_configuration_ids": [
+          "src-389cd3933cd62266"
+        ],
+        "kind": "boundary_face_axis",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            1,
+            2,
+            4
+          ],
+          [
+            2,
+            2,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-ee6102f53e192d96",
+        "source_configuration_ids": [
+          "src-849864f5ddc058ca"
+        ],
+        "kind": "boundary_face_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            0,
+            2,
+            4
+          ],
+          [
+            1,
+            3,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-f2ff19b7faa860cb",
+        "source_configuration_ids": [
+          "src-f66c8eabb7531b7e"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            2,
+            3,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-f3009653008716cb",
+        "source_configuration_ids": [
+          "src-36d68ddc28e7c615"
+        ],
+        "kind": "two_tet_box_edge",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            1,
+            3,
+            3
+          ],
+          [
+            2,
+            3,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 3,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-f33f2c6384fcf968",
+        "source_configuration_ids": [
+          "src-6e8bd554a3d535e5"
+        ],
+        "kind": "one_tet_box_edge",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            0,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 6,
+          "4": 12,
+          "5": 18
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-f483656aa612d290",
+        "source_configuration_ids": [
+          "src-4d0807ea06d436cb"
+        ],
+        "kind": "interior_face_diagonal",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            2,
+            2,
+            2
+          ],
+          [
+            2,
+            3,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-f778d2dcd2afc51e",
+        "source_configuration_ids": [
+          "src-849864f5ddc058ca"
+        ],
+        "kind": "boundary_face_diagonal",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 6,
+          "4": 6,
+          "5": 6
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-f8e2d081f456585b",
+        "source_configuration_ids": [
+          "src-c23d3c134dc5791f"
+        ],
+        "kind": "cube_diagonal",
+        "representative_grid": 5,
+        "representative_edge": [
+          [
+            2,
+            4,
+            4
+          ],
+          [
+            3,
+            5,
+            5
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 0,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-f9d6bd9bd0e6cbd8",
+        "source_configuration_ids": [
+          "src-321502991726941d"
+        ],
+        "kind": "two_tet_box_edge",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            3,
+            3
+          ],
+          [
+            1,
+            3,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 3,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-fac80958ac286eb3",
+        "source_configuration_ids": [
+          "src-4d9526d29ffb871f"
+        ],
+        "kind": "interior_axis",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            2,
+            3,
+            3
+          ],
+          [
+            3,
+            3,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 3,
+          "5": 3
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-fb6d97f383196097",
+        "source_configuration_ids": [
+          "src-07647043bf048632"
+        ],
+        "kind": "boundary_face_axis",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            1,
+            2,
+            4
+          ],
+          [
+            1,
+            3,
+            4
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-fe8798bdf007b7db",
+        "source_configuration_ids": [
+          "src-113473e8f3f639a8"
+        ],
+        "kind": "interior_axis",
+        "representative_grid": 4,
+        "representative_edge": [
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 0,
+          "4": 6,
+          "5": 12
+        }
+      },
+      {
+        "coverage_configuration_id": "cfg-ffc5a165ddad365b",
+        "source_configuration_ids": [
+          "src-d0699024c5f1ea02"
+        ],
+        "kind": "boundary_face_axis",
+        "representative_grid": 3,
+        "representative_edge": [
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            3
+          ]
+        ],
+        "placement_count_by_grid": {
+          "3": 6,
+          "4": 6,
+          "5": 6
+        }
+      }
+    ]
+  },
+  "record_index": [
+    {
+      "record_id": "N3:e(0,0,1)-(0,1,1):k4",
+      "grid_shape": [
+        3,
+        3,
+        3
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "k": 4,
+      "kind": "boundary_face_axis",
+      "source_configuration_id": "src-9d76a4584222fc6b",
+      "coverage_configuration_id": "cfg-7574f45c06357d66"
+    },
+    {
+      "record_id": "N3:e(0,0,1)-(0,1,1):k5",
+      "grid_shape": [
+        3,
+        3,
+        3
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "k": 5,
+      "kind": "boundary_face_axis",
+      "source_configuration_id": "src-9d76a4584222fc6b",
+      "coverage_configuration_id": "cfg-7574f45c06357d66"
+    },
+    {
+      "record_id": "N3:e(0,0,0)-(0,1,1):k4",
+      "grid_shape": [
+        3,
+        3,
+        3
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "k": 4,
+      "kind": "boundary_face_diagonal",
+      "source_configuration_id": "src-eeea7a4fca6efe6f",
+      "coverage_configuration_id": "cfg-5f098fbf8310efe9"
+    },
+    {
+      "record_id": "N3:e(0,0,0)-(0,1,1):k5",
+      "grid_shape": [
+        3,
+        3,
+        3
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "k": 5,
+      "kind": "boundary_face_diagonal",
+      "source_configuration_id": "src-eeea7a4fca6efe6f",
+      "coverage_configuration_id": "cfg-5f098fbf8310efe9"
+    },
+    {
+      "record_id": "N3:e(0,0,0)-(1,1,1):k4",
+      "grid_shape": [
+        3,
+        3,
+        3
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "k": 4,
+      "kind": "cube_diagonal",
+      "source_configuration_id": "src-dc9c9ce685b8568e",
+      "coverage_configuration_id": "cfg-4bf0c72f771d50a3"
+    },
+    {
+      "record_id": "N3:e(0,0,0)-(1,1,1):k5",
+      "grid_shape": [
+        3,
+        3,
+        3
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "k": 5,
+      "kind": "cube_diagonal",
+      "source_configuration_id": "src-dc9c9ce685b8568e",
+      "coverage_configuration_id": "cfg-4bf0c72f771d50a3"
+    },
+    {
+      "record_id": "N3:e(0,1,1)-(1,1,1):k4",
+      "grid_shape": [
+        3,
+        3,
+        3
+      ],
+      "edge": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "k": 4,
+      "kind": "interior_axis",
+      "source_configuration_id": "src-5671a153b3c974ab",
+      "coverage_configuration_id": "cfg-1a4d6e83bac8442a"
+    },
+    {
+      "record_id": "N3:e(0,1,1)-(1,1,1):k5",
+      "grid_shape": [
+        3,
+        3,
+        3
+      ],
+      "edge": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "k": 5,
+      "kind": "interior_axis",
+      "source_configuration_id": "src-5671a153b3c974ab",
+      "coverage_configuration_id": "cfg-1a4d6e83bac8442a"
+    },
+    {
+      "record_id": "N3:e(0,0,1)-(1,1,1):k4",
+      "grid_shape": [
+        3,
+        3,
+        3
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "k": 4,
+      "kind": "interior_face_diagonal",
+      "source_configuration_id": "src-e017c7acfc50a29f",
+      "coverage_configuration_id": "cfg-27f3ae78c273699c"
+    },
+    {
+      "record_id": "N3:e(0,0,1)-(1,1,1):k5",
+      "grid_shape": [
+        3,
+        3,
+        3
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "k": 5,
+      "kind": "interior_face_diagonal",
+      "source_configuration_id": "src-e017c7acfc50a29f",
+      "coverage_configuration_id": "cfg-27f3ae78c273699c"
+    },
+    {
+      "record_id": "N3:e(0,0,3)-(0,1,3):k4",
+      "grid_shape": [
+        3,
+        3,
+        3
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          1,
+          3
+        ]
+      ],
+      "k": 4,
+      "kind": "one_tet_box_edge",
+      "source_configuration_id": "src-68a95a31427552bc",
+      "coverage_configuration_id": "cfg-18ca183c3ecc3ec7"
+    },
+    {
+      "record_id": "N3:e(0,0,3)-(0,1,3):k5",
+      "grid_shape": [
+        3,
+        3,
+        3
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          1,
+          3
+        ]
+      ],
+      "k": 5,
+      "kind": "one_tet_box_edge",
+      "source_configuration_id": "src-68a95a31427552bc",
+      "coverage_configuration_id": "cfg-18ca183c3ecc3ec7"
+    },
+    {
+      "record_id": "N3:e(0,0,0)-(0,0,1):k4",
+      "grid_shape": [
+        3,
+        3,
+        3
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "k": 4,
+      "kind": "two_tet_box_edge",
+      "source_configuration_id": "src-a4fcd60d279a7844",
+      "coverage_configuration_id": "cfg-e568d0f52e716fa5"
+    },
+    {
+      "record_id": "N3:e(0,0,0)-(0,0,1):k5",
+      "grid_shape": [
+        3,
+        3,
+        3
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "k": 5,
+      "kind": "two_tet_box_edge",
+      "source_configuration_id": "src-a4fcd60d279a7844",
+      "coverage_configuration_id": "cfg-e568d0f52e716fa5"
+    },
+    {
+      "record_id": "N4:e(0,0,1)-(0,1,1):k4",
+      "grid_shape": [
+        4,
+        4,
+        4
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "k": 4,
+      "kind": "boundary_face_axis",
+      "source_configuration_id": "src-9d76a4584222fc6b",
+      "coverage_configuration_id": "cfg-7574f45c06357d66"
+    },
+    {
+      "record_id": "N4:e(0,0,1)-(0,1,1):k5",
+      "grid_shape": [
+        4,
+        4,
+        4
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "k": 5,
+      "kind": "boundary_face_axis",
+      "source_configuration_id": "src-9d76a4584222fc6b",
+      "coverage_configuration_id": "cfg-7574f45c06357d66"
+    },
+    {
+      "record_id": "N4:e(0,0,0)-(0,1,1):k4",
+      "grid_shape": [
+        4,
+        4,
+        4
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "k": 4,
+      "kind": "boundary_face_diagonal",
+      "source_configuration_id": "src-eeea7a4fca6efe6f",
+      "coverage_configuration_id": "cfg-5f098fbf8310efe9"
+    },
+    {
+      "record_id": "N4:e(0,0,0)-(0,1,1):k5",
+      "grid_shape": [
+        4,
+        4,
+        4
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "k": 5,
+      "kind": "boundary_face_diagonal",
+      "source_configuration_id": "src-eeea7a4fca6efe6f",
+      "coverage_configuration_id": "cfg-5f098fbf8310efe9"
+    },
+    {
+      "record_id": "N4:e(0,0,0)-(1,1,1):k4",
+      "grid_shape": [
+        4,
+        4,
+        4
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "k": 4,
+      "kind": "cube_diagonal",
+      "source_configuration_id": "src-dc9c9ce685b8568e",
+      "coverage_configuration_id": "cfg-4bf0c72f771d50a3"
+    },
+    {
+      "record_id": "N4:e(0,0,0)-(1,1,1):k5",
+      "grid_shape": [
+        4,
+        4,
+        4
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "k": 5,
+      "kind": "cube_diagonal",
+      "source_configuration_id": "src-dc9c9ce685b8568e",
+      "coverage_configuration_id": "cfg-4bf0c72f771d50a3"
+    },
+    {
+      "record_id": "N4:e(0,1,1)-(1,1,1):k4",
+      "grid_shape": [
+        4,
+        4,
+        4
+      ],
+      "edge": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "k": 4,
+      "kind": "interior_axis",
+      "source_configuration_id": "src-5671a153b3c974ab",
+      "coverage_configuration_id": "cfg-1a4d6e83bac8442a"
+    },
+    {
+      "record_id": "N4:e(0,1,1)-(1,1,1):k5",
+      "grid_shape": [
+        4,
+        4,
+        4
+      ],
+      "edge": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "k": 5,
+      "kind": "interior_axis",
+      "source_configuration_id": "src-5671a153b3c974ab",
+      "coverage_configuration_id": "cfg-1a4d6e83bac8442a"
+    },
+    {
+      "record_id": "N4:e(0,0,1)-(1,1,1):k4",
+      "grid_shape": [
+        4,
+        4,
+        4
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "k": 4,
+      "kind": "interior_face_diagonal",
+      "source_configuration_id": "src-e017c7acfc50a29f",
+      "coverage_configuration_id": "cfg-27f3ae78c273699c"
+    },
+    {
+      "record_id": "N4:e(0,0,1)-(1,1,1):k5",
+      "grid_shape": [
+        4,
+        4,
+        4
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "k": 5,
+      "kind": "interior_face_diagonal",
+      "source_configuration_id": "src-e017c7acfc50a29f",
+      "coverage_configuration_id": "cfg-27f3ae78c273699c"
+    },
+    {
+      "record_id": "N4:e(0,0,4)-(0,1,4):k4",
+      "grid_shape": [
+        4,
+        4,
+        4
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          1,
+          4
+        ]
+      ],
+      "k": 4,
+      "kind": "one_tet_box_edge",
+      "source_configuration_id": "src-68a95a31427552bc",
+      "coverage_configuration_id": "cfg-18ca183c3ecc3ec7"
+    },
+    {
+      "record_id": "N4:e(0,0,4)-(0,1,4):k5",
+      "grid_shape": [
+        4,
+        4,
+        4
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          1,
+          4
+        ]
+      ],
+      "k": 5,
+      "kind": "one_tet_box_edge",
+      "source_configuration_id": "src-68a95a31427552bc",
+      "coverage_configuration_id": "cfg-18ca183c3ecc3ec7"
+    },
+    {
+      "record_id": "N4:e(0,0,0)-(0,0,1):k4",
+      "grid_shape": [
+        4,
+        4,
+        4
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "k": 4,
+      "kind": "two_tet_box_edge",
+      "source_configuration_id": "src-a4fcd60d279a7844",
+      "coverage_configuration_id": "cfg-e568d0f52e716fa5"
+    },
+    {
+      "record_id": "N4:e(0,0,0)-(0,0,1):k5",
+      "grid_shape": [
+        4,
+        4,
+        4
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "k": 5,
+      "kind": "two_tet_box_edge",
+      "source_configuration_id": "src-a4fcd60d279a7844",
+      "coverage_configuration_id": "cfg-e568d0f52e716fa5"
+    },
+    {
+      "record_id": "N5:e(0,0,1)-(0,1,1):k4",
+      "grid_shape": [
+        5,
+        5,
+        5
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "k": 4,
+      "kind": "boundary_face_axis",
+      "source_configuration_id": "src-9d76a4584222fc6b",
+      "coverage_configuration_id": "cfg-7574f45c06357d66"
+    },
+    {
+      "record_id": "N5:e(0,0,1)-(0,1,1):k5",
+      "grid_shape": [
+        5,
+        5,
+        5
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "k": 5,
+      "kind": "boundary_face_axis",
+      "source_configuration_id": "src-9d76a4584222fc6b",
+      "coverage_configuration_id": "cfg-7574f45c06357d66"
+    },
+    {
+      "record_id": "N5:e(0,0,0)-(0,1,1):k4",
+      "grid_shape": [
+        5,
+        5,
+        5
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "k": 4,
+      "kind": "boundary_face_diagonal",
+      "source_configuration_id": "src-eeea7a4fca6efe6f",
+      "coverage_configuration_id": "cfg-5f098fbf8310efe9"
+    },
+    {
+      "record_id": "N5:e(0,0,0)-(0,1,1):k5",
+      "grid_shape": [
+        5,
+        5,
+        5
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "k": 5,
+      "kind": "boundary_face_diagonal",
+      "source_configuration_id": "src-eeea7a4fca6efe6f",
+      "coverage_configuration_id": "cfg-5f098fbf8310efe9"
+    },
+    {
+      "record_id": "N5:e(0,0,0)-(1,1,1):k4",
+      "grid_shape": [
+        5,
+        5,
+        5
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "k": 4,
+      "kind": "cube_diagonal",
+      "source_configuration_id": "src-dc9c9ce685b8568e",
+      "coverage_configuration_id": "cfg-4bf0c72f771d50a3"
+    },
+    {
+      "record_id": "N5:e(0,0,0)-(1,1,1):k5",
+      "grid_shape": [
+        5,
+        5,
+        5
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "k": 5,
+      "kind": "cube_diagonal",
+      "source_configuration_id": "src-dc9c9ce685b8568e",
+      "coverage_configuration_id": "cfg-4bf0c72f771d50a3"
+    },
+    {
+      "record_id": "N5:e(0,1,1)-(1,1,1):k4",
+      "grid_shape": [
+        5,
+        5,
+        5
+      ],
+      "edge": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "k": 4,
+      "kind": "interior_axis",
+      "source_configuration_id": "src-5671a153b3c974ab",
+      "coverage_configuration_id": "cfg-1a4d6e83bac8442a"
+    },
+    {
+      "record_id": "N5:e(0,1,1)-(1,1,1):k5",
+      "grid_shape": [
+        5,
+        5,
+        5
+      ],
+      "edge": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "k": 5,
+      "kind": "interior_axis",
+      "source_configuration_id": "src-5671a153b3c974ab",
+      "coverage_configuration_id": "cfg-1a4d6e83bac8442a"
+    },
+    {
+      "record_id": "N5:e(0,0,1)-(1,1,1):k4",
+      "grid_shape": [
+        5,
+        5,
+        5
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "k": 4,
+      "kind": "interior_face_diagonal",
+      "source_configuration_id": "src-e017c7acfc50a29f",
+      "coverage_configuration_id": "cfg-27f3ae78c273699c"
+    },
+    {
+      "record_id": "N5:e(0,0,1)-(1,1,1):k5",
+      "grid_shape": [
+        5,
+        5,
+        5
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "k": 5,
+      "kind": "interior_face_diagonal",
+      "source_configuration_id": "src-e017c7acfc50a29f",
+      "coverage_configuration_id": "cfg-27f3ae78c273699c"
+    },
+    {
+      "record_id": "N5:e(0,0,5)-(0,1,5):k4",
+      "grid_shape": [
+        5,
+        5,
+        5
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          5
+        ],
+        [
+          0,
+          1,
+          5
+        ]
+      ],
+      "k": 4,
+      "kind": "one_tet_box_edge",
+      "source_configuration_id": "src-68a95a31427552bc",
+      "coverage_configuration_id": "cfg-18ca183c3ecc3ec7"
+    },
+    {
+      "record_id": "N5:e(0,0,5)-(0,1,5):k5",
+      "grid_shape": [
+        5,
+        5,
+        5
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          5
+        ],
+        [
+          0,
+          1,
+          5
+        ]
+      ],
+      "k": 5,
+      "kind": "one_tet_box_edge",
+      "source_configuration_id": "src-68a95a31427552bc",
+      "coverage_configuration_id": "cfg-18ca183c3ecc3ec7"
+    },
+    {
+      "record_id": "N5:e(0,0,0)-(0,0,1):k4",
+      "grid_shape": [
+        5,
+        5,
+        5
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "k": 4,
+      "kind": "two_tet_box_edge",
+      "source_configuration_id": "src-a4fcd60d279a7844",
+      "coverage_configuration_id": "cfg-e568d0f52e716fa5"
+    },
+    {
+      "record_id": "N5:e(0,0,0)-(0,0,1):k5",
+      "grid_shape": [
+        5,
+        5,
+        5
+      ],
+      "edge": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "k": 5,
+      "kind": "two_tet_box_edge",
+      "source_configuration_id": "src-a4fcd60d279a7844",
+      "coverage_configuration_id": "cfg-e568d0f52e716fa5"
+    }
+  ]
+}

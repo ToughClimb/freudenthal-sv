@@ -1,0 +1,44 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*~
+*.swp
+
+# Local configuration, credentials, and logs
+.env
+.env.*
+!.env.example
+*.log
+*.tmp
+*.bak
+private/
+internal/
+local/
+
+# Manuscript, submission, and review artifacts are maintained elsewhere
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.pdf
+*.tex
+*.zip
+advisor*/
