@@ -30,6 +30,16 @@ Thumbs.db
 private/
 internal/
 local/
+ssh/
+*.key
+*.pem
+*_ed25519*
+
+# Lean dependency/build caches and local toolchains
+.lake/
+.elan/
+*.olean
+*.ilean
 
 # Manuscript, submission, and review artifacts are maintained elsewhere
 *.aux

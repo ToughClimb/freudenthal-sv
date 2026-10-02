@@ -1,0 +1,365 @@
+import FreudenthalSVLean.AffineBarycentric
+import FreudenthalSVLean.ActualCanonicalData
+import FreudenthalSVLean.ActualCanonicalEdgeLift
+import FreudenthalSVLean.ActualCanonicalFaces
+import FreudenthalSVLean.ActualCanonicalPatternTrace
+import FreudenthalSVLean.ActualCanonicalSource
+import FreudenthalSVLean.CanonicalEdgeOrientation
+import FreudenthalSVLean.CanonicalLiftSupport
+import FreudenthalSVLean.CanonicalPressureLift
+import FreudenthalSVLean.CubeMeshSymmetry
+import FreudenthalSVLean.CubePolynomialTransport
+import FreudenthalSVLean.CubeTraceTransport
+import FreudenthalSVLean.DivergenceEnergy
+import FreudenthalSVLean.EdgeAssemblyGeometry
+import FreudenthalSVLean.GlobalEdgeLift
+import FreudenthalSVLean.GlobalSkeletonLift
+import FreudenthalSVLean.UniformEdgeLift
+import FreudenthalSVLean.ActualOrderedEdgeGeometry
+import FreudenthalSVLean.CanonicalEdgeProtection
+import FreudenthalSVLean.CanonicalFacePatterns
+import FreudenthalSVLean.CanonicalFaceTraceAlgebra
+import FreudenthalSVLean.CanonicalPatternSpan
+import FreudenthalSVLean.CanonicalSourceGeometry
+import FreudenthalSVLean.ConformingNodalMultiplication
+import FreudenthalSVLean.OrderedEdgeGeometry
+import FreudenthalSVLean.StableCanonicalEdgeLift
+import FreudenthalSVLean.StableCanonicalPattern
+import FreudenthalSVLean.StableWeightedFaceField
+import FreudenthalSVLean.UniversalFaceEdgeTrace
+import FreudenthalSVLean.ActualVertexStarGraph
+import FreudenthalSVLean.ActualEdgeCoverage
+import FreudenthalSVLean.ActualFaceEdgeTraces
+import FreudenthalSVLean.ActualPressureEdgeModes
+import FreudenthalSVLean.ActualFaceSupport
+import FreudenthalSVLean.ActualFaceConformity
+import FreudenthalSVLean.ActualFaceMean
+import FreudenthalSVLean.ActualRawVertexMean
+import FreudenthalSVLean.BernsteinMean
+import FreudenthalSVLean.BernsteinNestedIntegral
+import FreudenthalSVLean.BernsteinPolynomial
+import FreudenthalSVLean.BernsteinVolumeIntegral
+import FreudenthalSVLean.BetaPolynomialIntegral
+import FreudenthalSVLean.BoundedOverlapEnergy
+import FreudenthalSVLean.BoundaryEdgeCompatibility
+import FreudenthalSVLean.CanonicalEdgeCoverage
+import FreudenthalSVLean.ChainGeometry
+import FreudenthalSVLean.ChainMeasureTransport
+import FreudenthalSVLean.CheckerboardCompatibility
+import FreudenthalSVLean.ConformingEdgeJets
+import FreudenthalSVLean.ConformingFaceModes
+import FreudenthalSVLean.ConformingSkeletonBubble
+import FreudenthalSVLean.ConformingVertexCompatibility
+import FreudenthalSVLean.EdgeBubble
+import FreudenthalSVLean.EdgeIncidence
+import FreudenthalSVLean.EdgeJetContinuity
+import FreudenthalSVLean.EdgeModeUnisolvence
+import FreudenthalSVLean.EdgePressureData
+import FreudenthalSVLean.ElementBubbleAlgebra
+import FreudenthalSVLean.ElementBubbleInjectivity
+import FreudenthalSVLean.ElementBubbleLift
+import FreudenthalSVLean.ElementBubbleRange
+import FreudenthalSVLean.FaceBubbleMean
+import FreudenthalSVLean.FaceJumpCompatibility
+import FreudenthalSVLean.FaceModeTraces
+import FreudenthalSVLean.FiniteLinearLifting
+import FreudenthalSVLean.FreudenthalMesh
+import FreudenthalSVLean.GlobalVertexLift
+import FreudenthalSVLean.GridNodal
+import FreudenthalSVLean.GridNodalSupport
+import FreudenthalSVLean.HomogeneousBarycentric
+import FreudenthalSVLean.HomogeneousEdgeModes
+import FreudenthalSVLean.HomogeneousSkeletonCompleteness
+import FreudenthalSVLean.LowDegreeBubbleExpansion
+import FreudenthalSVLean.LowDegreeBubbleIndices
+import FreudenthalSVLean.LatticeAffineTransport
+import FreudenthalSVLean.MeanRoutingAlgebra
+import FreudenthalSVLean.MeanPreservingVertexLift
+import FreudenthalSVLean.MeshCoverage
+import FreudenthalSVLean.MeshSegments
+import FreudenthalSVLean.NodalMesh
+import FreudenthalSVLean.PolynomialCalculus
+import FreudenthalSVLean.PolynomialChainTransport
+import FreudenthalSVLean.PolynomialDegree
+import FreudenthalSVLean.PolynomialIntegration
+import FreudenthalSVLean.PolynomialInverseEstimate
+import FreudenthalSVLean.PolynomialL2
+import FreudenthalSVLean.PolynomialL2Space
+import FreudenthalSVLean.PolynomialScaling
+import FreudenthalSVLean.PolynomialSkeletonTrace
+import FreudenthalSVLean.PhysicalMacroFields
+import FreudenthalSVLean.PhysicalMacroLift
+import FreudenthalSVLean.PressureVertexBound
+import FreudenthalSVLean.QuarticBernstein
+import FreudenthalSVLean.QuarticMacro
+import FreudenthalSVLean.QuarticMacroConformity
+import FreudenthalSVLean.QuarticNodalRealization
+import FreudenthalSVLean.QuarticPatchCoverage
+import FreudenthalSVLean.QuarticPolynomial
+import FreudenthalSVLean.QuarticReferenceLift
+import FreudenthalSVLean.QuarticSpatial
+import FreudenthalSVLean.QuarticVolume
+import FreudenthalSVLean.RealTransport
+import FreudenthalSVLean.RawVertexMean
+import FreudenthalSVLean.RawVertexField
+import FreudenthalSVLean.RawVertexTrace
+import FreudenthalSVLean.ReferenceChainMeasure
+import FreudenthalSVLean.ScaledChainGeometry
+import FreudenthalSVLean.SkeletonBubble
+import FreudenthalSVLean.SkeletonField
+import FreudenthalSVLean.StableElementBubbleLift
+import FreudenthalSVLean.StableEdgeCoefficients
+import FreudenthalSVLean.StableFaceTransfer
+import FreudenthalSVLean.StableRawVertexField
+import FreudenthalSVLean.StableVertexLift
+import FreudenthalSVLean.StarMeanRouting
+import FreudenthalSVLean.StableStarMeanRouting
+import FreudenthalSVLean.VelocityEnergy
+import FreudenthalSVLean.VertexJetAlgebra
+import FreudenthalSVLean.VertexCompatibility
+import FreudenthalSVLean.VertexMeanCancellation
+import FreudenthalSVLean.VertexStarCoverage
+import FreudenthalSVLean.VertexStarTypes
+import FreudenthalSVLean.VertexStarSymmetry
+import FreudenthalSVLean.VertexEdgeCoverage
+import FreudenthalSVLean.VertexStarConnectivity
+import FreudenthalSVLean.VertexStarGraphTransport
+import FreudenthalSVLean.VertexFaceGeometry
+import FreudenthalSVLean.MacroPatchAdjacency
+import FreudenthalSVLean.MacroMeanTransfer
+import FreudenthalSVLean.CubeClusterGraph
+import FreudenthalSVLean.CubeClusterRouting
+import FreudenthalSVLean.StableCubeClusterRouting
+import FreudenthalSVLean.RectangularCubeCluster
+import FreudenthalSVLean.ElementMeanEnergy
+import FreudenthalSVLean.EdgeRoutingBox
+import FreudenthalSVLean.ClusterMeanRemoval
+import FreudenthalSVLean.BarycentricMonomialMean
+import FreudenthalSVLean.WeightedFaceMean
+import FreudenthalSVLean.BilinearFaceMean
+import FreudenthalSVLean.DivergenceMean
+import FreudenthalSVLean.CanonicalLiftMean
+import FreudenthalSVLean.ZeroTotalEdgeLift
+import FreudenthalSVLean.MeanPreservingEdgeLift
+import FreudenthalSVLean.EdgeRoutingOverlap
+import FreudenthalSVLean.GlobalMeanPreservingEdgeLift
+import FreudenthalSVLean.MeanPreservingSkeletonLift
+import FreudenthalSVLean.MeshIntersectionFaces
+import FreudenthalSVLean.MeshMeasurePartition
+import FreudenthalSVLean.ElementBubbleAssembly
+import FreudenthalSVLean.GlobalElementBubbleLift
+import FreudenthalSVLean.ZeroElementMeanRightInverse
+import FreudenthalSVLean.FixedMeshRightInverse
+import FreudenthalSVLean.UniformMeanLiftReduction
+import FreudenthalSVLean.GlobalPolynomialL2
+import FreudenthalSVLean.ConformingVelocityFunction
+import FreudenthalSVLean.ClassicalVelocityGradient
+import FreudenthalSVLean.FiniteClosedIntervalGluing
+import FreudenthalSVLean.FiniteClosedConvexGluing
+import FreudenthalSVLean.ConformingVelocityLipschitz
+import FreudenthalSVLean.WeakVelocityGradient
+import FreudenthalSVLean.ConformingDivergenceMean
+import FreudenthalSVLean.WeakGradientMollification
+import FreudenthalSVLean.MollificationL2
+import FreudenthalSVLean.BoundedMeshFunctions
+import FreudenthalSVLean.InteriorMollification
+import FreudenthalSVLean.InteriorMollificationL2
+import FreudenthalSVLean.ConformingH1Zero
+import FreudenthalSVLean.SmoothCubePoincare
+import FreudenthalSVLean.ConformingH1Energy
+import FreudenthalSVLean.TriangleBernsteinIntegral
+import FreudenthalSVLean.BarycentricFaceIntegral
+import FreudenthalSVLean.BarycentricPolynomialGauss
+import FreudenthalSVLean.BarycentricFaceGeometry
+import FreudenthalSVLean.ScaledFaceGauss
+import FreudenthalSVLean.FaceFluxNormalization
+import FreudenthalSVLean.ChainFiberIntegration
+import FreudenthalSVLean.SmoothChainGauss
+import FreudenthalSVLean.SmoothFaceTrace
+import FreudenthalSVLean.SmoothChainTransport
+import FreudenthalSVLean.ScaledSmoothCalculus
+import FreudenthalSVLean.WeakFaceTrace
+import FreudenthalSVLean.H1ApproximationL2
+import FreudenthalSVLean.WeakFaceGauss
+import FreudenthalSVLean.FaceL2MeanEstimate
+import FreudenthalSVLean.WeakFaceFluxCorrection
+import FreudenthalSVLean.BoundaryWeakFaceTrace
+import FreudenthalSVLean.WeakGradientLinearity
+import FreudenthalSVLean.H1ApproximationLinearity
+import FreudenthalSVLean.WeakLinearFaceTrace
+import FreudenthalSVLean.ConformingWeakFaceTrace
+import FreudenthalSVLean.IntervalH1Estimate
+import FreudenthalSVLean.BoxH1Estimate
+import FreudenthalSVLean.WeakBoxH1Estimate
+import FreudenthalSVLean.TranslatedBoxH1Estimate
+import FreudenthalSVLean.BoundaryBoxH1Estimate
+import FreudenthalSVLean.BoundaryHalfBoxGeometry
+import FreudenthalSVLean.LinearNodalInterpolation
+import FreudenthalSVLean.VolumeNodalInterpolation
+import FreudenthalSVLean.LocalAverageEstimates
+import FreudenthalSVLean.MeshAveragingBoxes
+import FreudenthalSVLean.BarycentricInterpolationEstimate
+import FreudenthalSVLean.LocalVolumeInterpolation
+import FreudenthalSVLean.InterpolationBoxOverlap
+import FreudenthalSVLean.StableVolumeInterpolation
+import FreudenthalSVLean.VolumeInterpolationL2
+import FreudenthalSVLean.OrderedSharedFaceChart
+import FreudenthalSVLean.InteriorFaceCoverage
+import FreudenthalSVLean.VelocityH1Representation
+import FreudenthalSVLean.InterpolationResidual
+import FreudenthalSVLean.FacePartner
+import FreudenthalSVLean.GlobalFaceCorrection
+import FreudenthalSVLean.StableGlobalFaceCorrection
+import FreudenthalSVLean.UniformMeanFortin
+import FreudenthalSVLean.CubeZeroMeanL2
+import FreudenthalSVLean.ContinuousInverseReduction
+import FreudenthalSVLean.H1ZeroLinearity
+import FreudenthalSVLean.WeakH1ZeroCubeEnergy
+import FreudenthalSVLean.WeakH1ZeroGradientSupport
+import FreudenthalSVLean.BoundedWeakDivergence
+import FreudenthalSVLean.H1ZeroL2Jet
+import FreudenthalSVLean.WeakGradientL2Closed
+import FreudenthalSVLean.H1ZeroL2Closed
+import FreudenthalSVLean.H1ZeroHilbertSpace
+import FreudenthalSVLean.H1JetRepresentative
+import FreudenthalSVLean.CubePressureHilbert
+import FreudenthalSVLean.HilbertLinearSection
+import FreudenthalSVLean.HilbertCubeDivergence
+import FreudenthalSVLean.HilbertInverseReduction
+import FreudenthalSVLean.BogovskiiCubeGeometry
+import FreudenthalSVLean.EuclideanCoordinateTransport
+import FreudenthalSVLean.FourierDirectionalDecay
+import FreudenthalSVLean.FourierRayBound
+import FreudenthalSVLean.BogovskiiTruncation
+import FreudenthalSVLean.BogovskiiRayRescaling
+import FreudenthalSVLean.WeightedIntegralSquare
+import FreudenthalSVLean.SmallScaleFourierKernel
+import FreudenthalSVLean.RescaledFourierEnergy
+import FreudenthalSVLean.FourierEnergyDilation
+import FreudenthalSVLean.SmallScaleFourierL2
+import FreudenthalSVLean.BogovskiiSchwartzKernels
+import FreudenthalSVLean.CompactParameterDifferentiation
+import FreudenthalSVLean.GenuineL1L2Fourier
+import FreudenthalSVLean.NormalizedFourierDilation
+import FreudenthalSVLean.C1CubeH1Zero
+import FreudenthalSVLean.BogovskiiKernelDifferentiation
+import FreudenthalSVLean.BogovskiiC1Truncation
+import FreudenthalSVLean.BogovskiiMixtureFourier
+import FreudenthalSVLean.CompactFourierIntegration
+import FreudenthalSVLean.CubeSupportedMixtures
+import FreudenthalSVLean.SpatialLowerHalfL2
+import FreudenthalSVLean.CubeSupportedL1L2
+import FreudenthalSVLean.SpatialUpperHalfL2
+import FreudenthalSVLean.ScalarMixtureEstimate
+import FreudenthalSVLean.ScalarMixtureDifferentiation
+import FreudenthalSVLean.EuclideanCubeTransport
+import FreudenthalSVLean.BogovskiiPressureSchwartz
+import FreudenthalSVLean.BogovskiiScalarIdentity
+import FreudenthalSVLean.BogovskiiGradientEstimate
+import FreudenthalSVLean.BogovskiiKernelDivergence
+import FreudenthalSVLean.BogovskiiTimeFTC
+import FreudenthalSVLean.BogovskiiDivergenceIdentity
+import FreudenthalSVLean.UniformApproximationSurjectivity
+import FreudenthalSVLean.BogovskiiPressureMixture
+import FreudenthalSVLean.BogovskiiPressureConvergence
+import FreudenthalSVLean.SmoothCubePressureSpace
+import FreudenthalSVLean.SmoothCubePressureDensity
+import FreudenthalSVLean.BogovskiiHilbertTruncation
+import FreudenthalSVLean.BogovskiiHilbertConvergence
+import FreudenthalSVLean.BogovskiiHilbertSurjectivity
+import FreudenthalSVLean.MainTheorem
+import FreudenthalSVLean.DiscreteInfSup
+
+/-!
+# FreudenthalSVLean
+
+Kernel-checked polynomial differentiation, genuine Bernstein volume
+integration, skeleton traces, quartic mean certificates, and arbitrary-size
+mesh geometry and uniform global vertex/edge skeleton lifts from the
+analytic Freudenthal–Scott–Vogelius proof, together with actual conforming
+quartic two-cube mean inverses and uniform physical energy bounds.
+Fixed bounded cube-cluster routing gives actual mean-preserving global
+edge and skeleton stages for both degrees on every mesh with `N >= 2`.
+Actual mesh face containment and zero-volume intersections establish
+conforming global element-bubble lifting. The uniform zero-element-mean
+right inverse is proved for `N >= 2`, and the separate `N=1` right inverse
+is proved. The unrestricted discrete target follows from the proved
+uniform initial element-mean lift.
+Actual zero-extended velocity functions are continuous and Lipschitz;
+their genuine L2 weak gradients have exactly the defined energy.
+Explicit smooth interior-supported approximations converge in H1,
+proving H1_0 membership by the standard closure criterion. Every pressure
+in the exact divergence image has genuine zero total mean.
+An explicit cube Poincare estimate bounds complete actual H1 energy by
+five times the gradient energy, uniformly in all meshes and degrees.
+Actual triangular face integrals, spatial charts, and polynomial Gauss
+identities are proved at every positive mesh scale. Outward flux weights
+and the cubic face bubble's exact single-face flux normalization are
+derived from actual geometry and integration, not stipulated identities.
+Genuine C1 Gauss formulas follow from one-dimensional fiber integration.
+Explicit smooth and weak-H1 face estimates retain the physical h^{-1}
+and h powers. Actual L2 face limits are unique and independent of smooth
+approximation, and their means satisfy the genuine weak element flux
+identity. Inactive physical grid faces have zero H1_0 trace. Fixed linear
+cubic face corrections have exact paired means, actual conformity,
+two-owner support and a uniform local residual-energy estimate.
+A single fixed linear weak trace operator is constructed on actual smooth-
+approximable weak H1 data. Codimension-one L2 convergence identifies every
+actual finite-element weak face trace with its true polynomial restriction.
+Actual interval and box Poincare estimates, weak-H1 transport and boundary
+half-box geometry give a fixed linear volume-averaging P1 interpolant on
+genuine weak H1_0 data. Actual barycentric estimates and a proved 1296-fold
+overlap bound establish uniform gradient stability and whole-space L2
+error of order h for every positive N. Shared faces have identical
+ordered charts, equal genuine weak traces and opposite outward fluxes.
+Actual arbitrary-N interior faces have a unique second owner and index;
+a geometry-only involution pairs their incidences. The fixed linear
+cubic correction has exact means and at most eight supported incidences
+on each element. Composition gives a uniformly stable fixed linear
+element-mean Fortin map on genuine weak H1_0 data for every positive N.
+The actual H1_0 smooth-closure criterion is linear and closed under strong
+L2 convergence of values and all weak derivatives. All such data obey
+the true full-H1 Poincare bound. Their gradients vanish almost everywhere
+outside the cube and have genuine zero total integrals. Actual divergence
+is a bounded linear map into genuine mean-zero cube L2 functions.
+The value-and-gradient map has exactly the full H1 Hilbert norm, its kernel
+is exactly almost-everywhere-zero data, and its range is closed and complete.
+The mean-zero cube pressure Hilbert space is proved closed and complete;
+actual pressure functions map onto it with exactly the genuine L2 norm.
+Fixed linear H1_0 representatives preserve the full H1 energy. Genuine
+cube divergence is a bounded linear operator between these Hilbert spaces.
+Proved actual divergence surjectivity gives a fixed bounded linear section
+by orthogonal kernel projection and the Banach inverse theorem. Actual
+representative transport proves the genuine continuous cube inverse and
+both unrestricted discrete targets, including the N=1 case.
+The actual normalized central Bogovskii bump and its coordinate moments
+give fixed genuine Schwartz kernels after measure-preserving Euclidean
+transport. The true truncated spatial fields have interior compact support,
+are C1, have the actual compact-parameter derivative formula, and belong
+to genuine H1_0. Quadratic directional Fourier decay gives integrable ray
+bounds. Weighted Cauchy--Schwarz, the exact lower-half change of variables,
+genuine product integrability, Fubini, dilation and Plancherel prove the
+uniform lower-half Fourier-side L2 estimate. Actual L1 Fourier integrals
+are identified with Hilbert L2 Fourier under genuine L1/L2 hypotheses.
+The actual scalar mixtures have the proved Fourier identity and uniform
+spatial lower/upper-half L2 bounds. Their true Frechet derivatives equal
+the estimated time integrals. Actual cube-supported smooth pressure and
+moment data have exact L2 transport and no-larger moment energy. The
+actual moment split connects the scalar fields to the genuine vector
+truncations. All nine physical partial derivatives and their complete
+uniform true gradient-energy bound are proved. Actual kernel-time
+differentiation and FTC prove the full truncated divergence identity and
+zero-mean cancellation. The actual mass pressures converge in genuine L2.
+Smooth mean-zero pressures are dense by the smooth-test fundamental lemma,
+zero boundary measure and orthogonal projection. Uniformly bounded Hilbert
+truncations, true divergence convergence and a complete-space geometric
+series prove surjectivity; density alone is not treated as surjectivity.
+`MainTheorem.quartic_uniform_right_inverse` and its quintic counterpart
+prove `FreudenthalMesh.HasUniformRightInverse 4` and `5` with no remaining
+mathematical hypotheses. Each stability constant precedes all N>=1; each
+mesh's fixed linear map precedes its pressure inputs. No project axioms,
+unchecked proof oracles or Zhang-specific vertex lemma are used. The
+full-H1-energy variants bound the actual full H1 norm, and `DiscreteInfSup`
+provides genuine positive-denominator uniform inf-sup witnesses.
+The higher-degree extension is outside this formalization's claimed scope.
+-/

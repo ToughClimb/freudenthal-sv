@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+script_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+repo_dir="$(cd -- "$script_dir/.." && pwd)"
+workspace_dir="$(cd -- "$repo_dir/.." && pwd)"
+
+cd "$repo_dir"
+
+if [[ -x "$workspace_dir/.elan/bin/lake" ]]; then
+  export ELAN_HOME="$workspace_dir/.elan"
+  exec "$ELAN_HOME/bin/lake" "$@"
+fi
+
+if command -v lake >/dev/null 2>&1; then
+  exec lake "$@"
+fi
+
+printf '%s\n' 'Lake was not found. Install elan and make lake available on PATH.' >&2
+exit 127

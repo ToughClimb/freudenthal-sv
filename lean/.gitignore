@@ -1,0 +1,8 @@
+.lake/
+*.olean
+*.ilean
+.elan/
+.venv/
+*.log
+.env
+.env.*

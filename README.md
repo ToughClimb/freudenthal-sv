@@ -1,14 +1,45 @@
 # Freudenthal–Scott–Vogelius exact verification
 
-This directory contains the exact-arithmetic verification files accompanying
+This repository contains the exact-arithmetic verification files and the
+Lean formalization accompanying
 the manuscript on uniform Scott–Vogelius stability on three-dimensional
 Freudenthal meshes in polynomial degrees 4 and 5. The journal-specific article
 source and compiled PDF are maintained separately.
 
+## Lean formalization
+
+[lean/](lean/README.md) contains the complete kernel-checked uniform
+divergence right-inverse proof for degrees `k=4,5` on every mesh size
+`N>=1`. The spaces use actual conforming spatial polynomials, genuine
+Lebesgue integral energies, weak gradients and the smooth-closure H1_0
+criterion. The fixed linear operators and stability constants have the
+required input and mesh quantifiers. The complete H1-energy variants and
+uniform reduced inf-sup witnesses are also proved.
+
+The final theorem entry points are
+[MainTheorem.lean](lean/FreudenthalSVLean/MainTheorem.lean) and
+[DiscreteInfSup.lean](lean/FreudenthalSVLean/DiscreteInfSup.lean).
+Lean 4.33.1, Mathlib 4.33.1 and all dependency revisions are pinned. With
+elan installed and `lake` on `PATH`, run:
+
+```sh
+cd lean
+lake exe cache get
+bash scripts/verify.sh
+```
+
+The script builds all project proofs and audits every project declaration
+transitively. Only `propext`, `Classical.choice` and `Quot.sound` are
+permitted. No `sorry`, project axioms, `native_decide`, external CAS or
+Python proof oracle is used. No Zhang-specific vertex lift is imported.
+The paper's higher-degree extension is outside the formalization scope.
+The Python suite below is separate reproducibility support and is not a
+dependency of the Lean proofs.
+
 ## Repository scope
 
-This repository contains only the verification programs, deterministic
-certificate data, inspection utilities, and reproduction instructions needed
+This repository contains only the Lean proofs, verification programs,
+deterministic certificate data, inspection utilities, and reproduction instructions needed
 to check the computations described below. It does not contain manuscript
 source, author contact information, local execution logs, third-party papers,
 review correspondence, or development discussions.
